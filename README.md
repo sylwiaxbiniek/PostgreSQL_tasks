@@ -2,7 +2,7 @@
 
 ## Zadanie 2 - Zadanie programistyczne
 
-Aby uruchomić program należy pobrać i rozpakować źródłowe repozytorium [GitHub Packages] (git@github.com:sylwiaxbiniek/Zadania_rekrutacyjne.git) lub sklonować je za pomocą komendy:
+Aby uruchomić program należy pobrać i rozpakować źródłowe repozytorium [GitHub Packages (https://github.com/sylwiaxbiniek/Zadania_rekrutacyjne) lub sklonować je za pomocą komendy:
 ```bash
 git clone
 ```
