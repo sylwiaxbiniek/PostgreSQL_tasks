@@ -8,7 +8,7 @@ git clone git@github.com:sylwiaxbiniek/Zadania_rekrutacyjne.git
 ```
 uruchomić program można używając:
 ```bash
-gradle run
+./gradlew run
 ```
 
 program stworzy plik bazy danych `test.db` w bieżącym katalogu
