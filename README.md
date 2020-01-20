@@ -2,11 +2,11 @@
 
 ## Zadanie 2 - Zadanie programistyczne
 
-Aby uruchomić program należy pobrać i rozpakować źródłowe repozytorium lub sklonować je za pomocą komendy:
+Aby uruchomić program należy pobrać i rozpakować źródłowe repozytorium lub sklonować projekt
 ```bash
 git clone git@github.com:sylwiaxbiniek/Zadania_rekrutacyjne.git
 ```
-uruchomić program można używając:
+W oknie terminala po przejściu do katalogu projektu należy wykonać polecenie
 ```bash
 ./gradlew run
 ```
