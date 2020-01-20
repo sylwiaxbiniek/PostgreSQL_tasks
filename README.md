@@ -16,8 +16,8 @@ program stworzy plik bazy danych `test.db` w bieżącym katalogu
 ## Zadania 3 - Zadania SQL
 
 Rozwiązania do zadań 1-6 znajdują się w plikach:
-Zadanie_3.1.md
-Zadanie_3.2.md
+* Zadanie_3.1.md
+* Zadanie_3.2.md
 Zadanie_3.3.md
 Zadanie_3.4.md
 Zadanie_3.5.md
