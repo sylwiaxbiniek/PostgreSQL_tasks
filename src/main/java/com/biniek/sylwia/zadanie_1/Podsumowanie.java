@@ -1,16 +1,9 @@
 package com.biniek.sylwia.zadanie_1;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
 public class Podsumowanie{
 
 
-  @GeneratedValue(strategy=GenerationType.AUTO)
-  @Id int id;
+  int id;
   public String kategoriaPodsumowania;
   public double kwota;
 
