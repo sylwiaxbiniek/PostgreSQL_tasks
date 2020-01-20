@@ -7,7 +7,7 @@ CREATE TABLE autor (
 CREATE TABLE ksiazka (
     id SERIAL primary key,
     tytul varchar not null,
-    liczba_autorow integer references,
+    liczba_autorow integer,
     autor1id integer references autor(id),
     autor2id integer references autor(id)
 );
