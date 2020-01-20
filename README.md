@@ -1,16 +1,18 @@
 # Zadania_rekrutacyjne
 
-Zadanie 2 - Zadanie programistyczne
+## Zadanie 2 - Zadanie programistyczne
 
 Aby uruchomić program należy pobrać i rozpakować źródłowe repozytorium lub sklonować je za pomocą komendy:
+```bash
 git clone
-
+```
 uruchomić program można używając:
+```bash
 gradle run
+```
 
 
-
-Zadania 3 - Zadania SQL
+## Zadania 3 - Zadania SQL
 
 Rozwiązania do zadań 1-6 znajdują się w plikach:
 Zadanie_3.1.md
@@ -22,7 +24,7 @@ Zadanie_3.6.md - w zadaniu 6 przyjęłam, że do grupy wiekowej A przypisane bę
 
 
 
-Zadanie 4 - Projekt bazy danych
+## Zadanie 4 - Projekt bazy danych
 
 Rozwiązanie zadania znajduje się w plikach:
 Zadanie_4.sql - skrypt sql dla bazy postgresql
