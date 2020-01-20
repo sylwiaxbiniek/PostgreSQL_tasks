@@ -7,28 +7,55 @@ import java.util.Map;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Zadanie1Application {
 
-	public static void createNewDatabase(String fileName) {
+		private Connection connect(String fileName) {
+		// SQLite connection string
+		String url = "jdbc:sqlite:" + fileName;
+		Connection conn = null;
+		try {
+				conn = DriverManager.getConnection(url);
+		} catch (SQLException e) {
+				System.out.println(e.getMessage());
+		}
+		return conn;
+}
 
-        String url = "jdbc:sqlite:" + fileName;
+		public void createTable(){
+			String sql = String.join("\n"
+         , "CREATE TABLE podsumowanie ("
+         , "kategoria_podsumowania TEXT,"
+         , "kwota REAL"
+         , ");"
+				 );
 
-        try (Connection conn = DriverManager.getConnection(url)) {
-            if (conn != null) {
-                DatabaseMetaData meta = conn.getMetaData();
-                System.out.println("The driver name is " + meta.getDriverName());
-                System.out.println("A new database has been created.");
-            }
+			try (Connection conn = this.connect("test.db");
+					PreparedStatement pstmt = conn.prepareStatement(sql)) {
+					pstmt.executeUpdate();
+			} catch (SQLException e) {
+					System.out.println(e.getMessage());
+			}
+		}
 
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+	public void insert(String kategoria, double kwota) {
+			 String sql = "INSERT INTO podsumowanie(kategoria_podsumowania,kwota) VALUES(?,?)";
+
+			 try (Connection conn = this.connect("test.db");
+					PreparedStatement pstmt = conn.prepareStatement(sql)) {
+					 pstmt.setString(1, kategoria);
+					 pstmt.setDouble(2, kwota);
+					 pstmt.executeUpdate();
+			 } catch (SQLException e) {
+					 System.out.println(e.getMessage());
+			 }
+	 }
 
 	public static void main(String[] args) {
-		createNewDatabase("test.db");
+		Zadanie1Application baza_danych = new Zadanie1Application();
+		baza_danych.createTable();
 
 		List<DaneWejsciowe> uslugi = new ArrayList<>();
 		List<KategoriePodsumowania> kategorie = new ArrayList<>();
@@ -54,7 +81,7 @@ public class Zadanie1Application {
 
 		for (KategoriePodsumowania kategoria : kategorie) {
 			pods.add(new Podsumowanie(kategoria.nazwaKategorii, kategoria.wartosc));
-			//baza_danych.save(new Podsumowanie(kategoria.nazwaKategorii, kategoria.wartosc));
+			baza_danych.insert(kategoria.nazwaKategorii, kategoria.wartosc);
 		}
 
 		System.out.println(pods);
