@@ -15,7 +15,7 @@ public class Podsumowanie{
   @Override
   public String toString() {
       return String.format(
-              "Podsumowanie[id='%d', kategoria='%s' , kwota='%f']",
+              "Podsumowanie[id='%d', kategoria='%s' , kwota='%.2f']",
               id, kategoriaPodsumowania, kwota);
   }
 
