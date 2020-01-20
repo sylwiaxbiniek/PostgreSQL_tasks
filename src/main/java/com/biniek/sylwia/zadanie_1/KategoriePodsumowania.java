@@ -14,4 +14,4 @@ public class KategoriePodsumowania {
         this.nazwaKategorii = nazwaKategorii;
         this.kolejnoscSortowania = kolejnoscSortowania;
     }
-   }
+}
