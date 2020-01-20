@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.sql.SQLException;
 
 public class Zadanie1Application {
@@ -25,6 +26,7 @@ public class Zadanie1Application {
 }
 
 		public void createTable(){
+			String drop = new String("DROP TABLE IF EXISTS podsumowanie;");
 			String sql = String.join("\n"
          , "CREATE TABLE podsumowanie ("
          , "kategoria_podsumowania TEXT,"
@@ -32,9 +34,11 @@ public class Zadanie1Application {
          , ");"
 				 );
 
-			try (Connection conn = this.connect("test.db");
-					PreparedStatement pstmt = conn.prepareStatement(sql)) {
-					pstmt.executeUpdate();
+			try {
+					Connection conn = this.connect("test.db");
+					Statement statement = conn.createStatement();
+					statement.executeUpdate(drop);
+					statement.executeUpdate(sql);
 			} catch (SQLException e) {
 					System.out.println(e.getMessage());
 			}
