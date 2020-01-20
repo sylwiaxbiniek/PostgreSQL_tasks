@@ -11,6 +11,7 @@ uruchomić program można używając:
 gradle run
 ```
 
+program stworzy plik bazy danych `test.db` w bieżącym katalogu
 
 ## Zadania 3 - Zadania SQL
 
@@ -30,4 +31,3 @@ Rozwiązanie zadania znajduje się w plikach:
 Zadanie_4.sql - skrypt sql dla bazy postgresql
 Zadanie_4.1.md - zapytanie prezentujące książki posiadające co najmniej dwóch autorów
 Zadanie_4.2.md - przyklad zapytan dla wyszukiwania na podstawie fragmentu tekstu
-
