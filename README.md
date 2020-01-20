@@ -28,4 +28,6 @@ Zadanie_3.6.md - w zadaniu 6 przyjęłam, że do grupy wiekowej A przypisane bę
 
 Rozwiązanie zadania znajduje się w plikach:
 Zadanie_4.sql - skrypt sql dla bazy postgresql
-Zadanie_4_zapytania.md - zapytanie prezentujące książki posiadające co najmniej dwóch autorów
+Zadanie_4.1.md - zapytanie prezentujące książki posiadające co najmniej dwóch autorów
+Zadanie_4.2.md - przyklad zapytan dla wyszukiwania na podstawie fragmentu tekstu
+
