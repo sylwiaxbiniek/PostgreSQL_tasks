@@ -1,10 +1,11 @@
 plugins {
 	id 'java'
+	id 'application'
 }
 
-group = 'com.biniek.sylwia'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+application {
+    mainClassName = 'com.biniek.sylwia.zadanie_1.Zadanie1Application'
+}
 
 repositories {
 	mavenCentral()
@@ -12,8 +13,4 @@ repositories {
 
 dependencies {
 	compile group:'org.xerial', name:'sqlite-jdbc', version:'3.8.11.2'
-}
-
-test {
-	useJUnitPlatform()
 }
