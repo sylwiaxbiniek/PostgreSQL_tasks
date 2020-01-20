@@ -13,12 +13,12 @@ gradle run
 Zadania 3 - Zadania SQL
 
 Rozwiązania do zadań 1-6 znajdują się w plikach:
-Zadanie_3.1
-Zadanie_3.2
-Zadanie_3.3
-Zadanie_3.4
-Zadanie_3.5
-Zadanie_3.6 - w zadaniu 6 przyjęłam, że do grupy wiekowej A przypisane będą dzieci w wieku 0-4, do grupy B w wieku 5-9, do grupy C dzieci powyżej 9 roku życia
+Zadanie_3.1.md
+Zadanie_3.2.md
+Zadanie_3.3.md
+Zadanie_3.4.md
+Zadanie_3.5.md
+Zadanie_3.6.md - w zadaniu 6 przyjęłam, że do grupy wiekowej A przypisane będą dzieci w wieku 0-4, do grupy B w wieku 5-9, do grupy C dzieci powyżej 9 roku życia
 
 
 
